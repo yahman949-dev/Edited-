@@ -3,163 +3,266 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Family Dollar $500 Gift Card</title>
+<title>Everyday Rewards | $500 Gift Card Opportunity</title>
 
 <style>
-body{
-    margin:0;
-    font-family:'Segoe UI',sans-serif;
-    background:linear-gradient(135deg,#3a0ca3,#7209b7,#f72585);
-    color:#fff;
-    text-align:center;
+/* CSS Reset & Core Settings */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-@keyframes float{
-    0%{transform:translateY(0)}
-    50%{transform:translateY(-10px)}
-    100%{transform:translateY(0)}
-}
-@keyframes pulse{
-    0%{transform:scale(1)}
-    50%{transform:scale(1.07)}
-    100%{transform:scale(1)}
-}
-.container{
-    padding:40px 20px;
-}
-.header{
-    font-size:38px;
-    font-weight:900;
-    margin-bottom:10px;
-    animation:float 4s infinite ease-in-out;
-}
-.sub{
-    font-size:20px;
-    opacity:.9;
-    margin-bottom:25px;
-}
-.card{
-    background:#fff;
-    color:#000;
-    border-radius:26px;
-    padding:30px 20px;
-    max-width:460px;
-    margin:0 auto 30px;
-    box-shadow:0 15px 40px rgba(0,0,0,.35);
-}
-.amount{
-    font-size:34px;
-    font-weight:900;
-    color:#e63946;
-    margin-bottom:10px;
-}
-.steps p{
-    font-size:18px;
-    margin:10px 0;
-}
-.btn{
-    display:block;
-    background:#000;
-    color:#fff;
-    padding:18px 28px;
-    border-radius:14px;
-    font-size:22px;
-    font-weight:800;
-    text-decoration:none;
-    width:85%;
-    max-width:360px;
-    margin:0 auto;
-    animation:pulse 2.1s infinite ease-in-out;
-}
-.btn:hover{opacity:.85}
 
-/* HIGH ATTENTION COMPLIANT OPPORTUNITIES SECTION */
+body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    background: linear-gradient(135deg, #3a0ca3, #7209b7, #f72585);
+    background-attachment: fixed;
+    color: #ffffff;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+}
+
+/* Animations */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+    100% { transform: scale(1); }
+}
+
+/* Layout Container */
+.container {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    flex-grow: 1;
+}
+
+/* Header Section */
+.header {
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 8px;
+    line-height: 1.2;
+    animation: float 4s infinite ease-in-out;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sub {
+    font-size: 17px;
+    opacity: 0.95;
+    margin-bottom: 25px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+/* Main Reward Card */
+.card {
+    background: #ffffff;
+    color: #1e293b;
+    border-radius: 20px;
+    padding: 28px 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1;
+}
+
+.amount {
+    font-size: 28px;
+    font-weight: 900;
+    color: #d90429;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.steps {
+    text-align: left;
+    background: #f8fafc;
+    border-radius: 12px;
+    padding: 15px 18px;
+    border: 1px solid #e2e8f0;
+}
+
+.steps p {
+    font-size: 15px;
+    margin: 8px 0;
+    color: #334155;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.steps p span {
+    background: #7209b7;
+    color: #fff;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+/* Primary CTA Button */
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000000;
+    color: #ffffff;
+    padding: 18px 24px;
+    border-radius: 14px;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+    width: 100%;
+    margin: 0 auto 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    animation: pulse 2.1s infinite ease-in-out;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background: #1a1a1a;
+    transform: translateY(-2px);
+}
+
+/* Secondary Opportunity Box */
 .attention-jobs-box {
-    background: rgba(15, 23, 42, 0.45);
-    border: 3px solid #00f5d4;
-    border-radius: 24px;
-    padding: 28px 24px;
-    max-width: 460px;
-    margin: 40px auto 20px;
+    background: rgba(15, 23, 42, 0.55);
+    border: 2px solid #00f5d4;
+    border-radius: 20px;
+    padding: 24px 20px;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    box-shadow: 0 0 25px rgba(0, 245, 212, 0.5);
-    animation: pulse 2.5s infinite ease-in-out;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    margin-bottom: 25px;
 }
+
 .attention-jobs-box h3 {
-    font-size: 22px;
+    font-size: 19px;
     font-weight: 800;
     color: #00f5d4;
     margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.03em;
 }
+
 .attention-jobs-box p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
-    color: #f8fafc;
-    margin-bottom: 20px;
-    opacity: 0.95;
+    color: #f1f5f9;
+    margin-bottom: 18px;
+    opacity: 0.9;
 }
+
 .jobs-anchor-btn {
     display: inline-block;
     background: #00f5d4;
     color: #0f172a;
-    padding: 14px 30px;
-    border-radius: 12px;
+    padding: 12px 24px;
+    border-radius: 10px;
     font-weight: 800;
-    font-size: 17px;
+    font-size: 15px;
     text-decoration: none;
     text-transform: uppercase;
     transition: all 0.2s ease;
-    box-shadow: 0 4px 12px rgba(0, 245, 212, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 245, 212, 0.25);
 }
+
 .jobs-anchor-btn:hover {
     background: #ffffff;
     color: #000000;
-    transform: translateY(-1px);
-    box-shadow: 0 6px 18px rgba(255, 255, 255, 0.4);
+    transform: translateY(-2px);
 }
 
-.footer{
-    margin-top:25px;
-    font-size:14px;
-    opacity:.8;
+/* Compliance & Footer Section */
+.footer {
+    background: rgba(0, 0, 0, 0.25);
+    padding: 25px 20px;
+    font-size: 12px;
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+.footer-links {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: underline;
+    margin: 0 8px;
+    font-size: 12px;
+}
+
+.disclaimer-text {
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.8;
 }
 </style>
 </head>
 
 <body>
+
 <div class="container">
 
-<div class="header">🎉 Family Dollar Gift Card 🎉</div>
-<div class="sub">Groceries • Essentials • Everyday Savings</div>
+    <!-- Header -->
+    <div class="header">🎉 Everyday Shopper Rewards 🎉</div>
+    <div class="sub">Groceries • Household Essentials • Everyday Savings</div>
 
-<div class="card">
-    <div class="amount">$500 to Spend at Family Dollar</div>
-    <div class="steps">
-        <p>1. Click the button below & sign up</p>
-        <p>2. Complete a few quick deals</p>
-        <p>3. Claim your $500 Family Dollar Gift Card</p>
+    <!-- Main Card -->
+    <div class="card">
+        <div class="amount">Earn a $500 Gift Card Opportunity</div>
+        <div class="steps">
+            <p><span>1</span> Click below to start your registration</p>
+            <p><span>2</span> Complete required sponsor deals & surveys</p>
+            <p><span>3</span> Claim your Family Dollar gift card reward</p>
+        </div>
     </div>
-</div>
 
-<a class="btn" href="https://www.af9m8trk.com/QLJ11S9T/TTR12295/">
-    Get $500 Family Dollar Card
-</a>
-
-<!-- Attention-Grabbing Live Redirect Portal -->
-<div class="attention-jobs-box">
-    <h3>💰 Looking for More Ways to Boost Your Income?</h3>
-    <p>Unlock fresh financial horizons and explore new pathways designed to maximize your everyday earning potential.</p>
-    <a class="jobs-anchor-btn" href="https://getworktoday.netlify.app/">
-        Explore Career Portals &rarr;
+    <!-- Primary CTA -->
+    <a class="btn" href="YOUR_AFFILIATE_LINK_HERE" target="_blank" rel="noopener sponsored">
+        Claim $500 Reward Card &rarr;
     </a>
+
+    <!-- Secondary Portal Box -->
+    <div class="attention-jobs-box">
+        <h3>💰 Looking for Daily Income Opportunities?</h3>
+        <p>Explore verified remote pathways, flexible tasks, and career portals designed to supplement your weekly income.</p>
+        <a class="jobs-anchor-btn" href="YOUR_SECONDARY_LINK_HERE" target="_blank" rel="noopener">
+            Explore Portals &rarr;
+        </a>
+    </div>
+
 </div>
 
-<div class="footer">
-    Limited availability • Act fast before it expires
-</div>
+<!-- Legal & Compliance Footer -->
+<footer class="footer">
+    <div class="footer-links">
+        <a href="#">Privacy Policy</a> | 
+        <a href="#">Terms & Conditions</a> | 
+        <a href="#">Program Requirements</a> | 
+        <a href="#">Contact Us</a>
+    </div>
+    <p class="disclaimer-text">
+        <strong>Disclaimer:</strong> This website is an independent promotional directory and is not affiliated with, sponsored by, or endorsed by Family Dollar Stores, Inc. Trademarks, service marks, and logos belong to their respective owners. Participation in required sponsor offers is necessary to receive rewards.
+    </p>
+</footer>
 
-</div>
 </body>
 </html>
